@@ -15,6 +15,7 @@
         h1 {
             text-align: center;
             color: #E78A28;
+            font-size: 1.8em;
         }
         .shortcut-table {
             width: 100%;
@@ -25,6 +26,7 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             overflow: hidden;
+            font-size: 1em;
         }
         .shortcut-table th, .shortcut-table td {
             padding: 12px;
@@ -33,7 +35,7 @@
         }
         .shortcut-table th {
             background-color: #f0f0f0;
-            font-size: 14px;
+            font-size: 1em;
             font-weight: bold;
             color: #E78A28;
             text-align: center;
@@ -49,11 +51,24 @@
             border-radius: 5px;
             border: 1px solid #b4b4b4;
             padding: 4px 8px;
-            font-size: 0.85em;
+            font-size: 0.9em;
             font-weight: bold;
             white-space: nowrap;
-            margin: 2px;
             display: inline-block;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .shortcut-table {
+                font-size: 0.9em;
+            }
+            .shortcut-table th, .shortcut-table td {
+                padding: 8px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -68,56 +83,16 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Open or close Start menu</td>
-                <td>Opens the Start menu</td>
-                <td><kbd>Win</kbd></td>
-            </tr>
-            <tr>
-                <td>Notification Center</td>
-                <td>Displays notifications, messages, news, etc.</td>
-                <td><kbd>Win</kbd> + <kbd>A</kbd></td>
-            </tr>
-            <tr>
-                <td>Microsoft Copilot</td>
-                <td>Opens Copilot (mostly for older computers)</td>
-                <td><kbd>Win</kbd> + <kbd>C</kbd></td>
-            </tr>
-            <tr>
-                <td>Settings</td>
-                <td>Opens Windows Settings</td>
-                <td><kbd>Win</kbd> + <kbd>I</kbd></td>
-            </tr>
-            <tr>
-                <td>Lock your PC</td>
-                <td>Locks the computer and goes back to sign-in screen</td>
-                <td><kbd>Win</kbd> + <kbd>L</kbd></td>
-            </tr>
-            <tr>
-                <td>Open Project Settings</td>
-                <td>Options for Extended screen, Duplicate screen, etc.</td>
-                <td><kbd>Win</kbd> + <kbd>P</kbd></td>
-            </tr>
-            <tr>
-                <td>Task Manager</td>
-                <td>Opens Task Manager to close unresponsive applications</td>
-                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd></td>
-            </tr>
-            <tr>
-                <td>Sleep Mode</td>
-                <td>Puts the computer to sleep</td>
-                <td><kbd>Win</kbd> + <kbd>X</kbd> + <kbd>U</kbd> + <kbd>S</kbd></td>
-            </tr>
-            <tr>
-                <td>Restart</td>
-                <td>Restarts the computer</td>
-                <td><kbd>Win</kbd> + <kbd>X</kbd> + <kbd>U</kbd> + <kbd>R</kbd></td>
-            </tr>
-            <tr>
-                <td>Shutdown</td>
-                <td>Turns off the computer</td>
-                <td><kbd>Win</kbd> + <kbd>X</kbd> + <kbd>U</kbd> + <kbd>U</kbd></td>
-            </tr>
+            <tr><td>Open or close Start menu</td><td>Opens the Start menu</td><td><kbd>Win</kbd></td></tr>
+            <tr><td>Notification Center</td><td>Displays notifications</td><td><kbd>Win</kbd> + <kbd>A</kbd></td></tr>
+            <tr><td>Microsoft Copilot</td><td>Opens Copilot</td><td><kbd>Win</kbd> + <kbd>C</kbd></td></tr>
+            <tr><td>Settings</td><td>Opens Windows Settings</td><td><kbd>Win</kbd> + <kbd>I</kbd></td></tr>
+            <tr><td>Lock your PC</td><td>Locks the computer</td><td><kbd>Win</kbd> + <kbd>L</kbd></td></tr>
+            <tr><td>Open Project Settings</td><td>Extended screen options</td><td><kbd>Win</kbd> + <kbd>P</kbd></td></tr>
+            <tr><td>Task Manager</td><td>Opens Task Manager</td><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd></td></tr>
+            <tr><td>Sleep Mode</td><td>Puts the computer to sleep</td><td><kbd>Win</kbd> + <kbd>X</kbd> + <kbd>U</kbd> + <kbd>S</kbd></td></tr>
+            <tr><td>Restart</td><td>Restarts the computer</td><td><kbd>Win</kbd> + <kbd>X</kbd> + <kbd>U</kbd> + <kbd>R</kbd></td></tr>
+            <tr><td>Shutdown</td><td>Turns off the computer</td><td><kbd>Win</kbd> + <kbd>X</kbd> + <kbd>U</kbd> + <kbd>U</kbd></td></tr>
         </tbody>
     </table>
 </body>
